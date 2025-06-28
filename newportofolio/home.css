@@ -188,7 +188,7 @@ li, ul, a{
     height: 100%;
 }
 .img-inside{
-    max-width: 99%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: auto;
@@ -199,5 +199,6 @@ li, ul, a{
     font-weight: bold;
     cursor: pointer;
     position: fixed;
+    padding-top: 100px;
     z-index: 2;
 }
