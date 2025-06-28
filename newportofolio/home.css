@@ -188,7 +188,7 @@ li, ul, a{
     height: 100%;
 }
 .img-inside{
-    max-width: 100%;
+    max-width: 99%;
     height: auto;
     display: block;
     margin: auto;
