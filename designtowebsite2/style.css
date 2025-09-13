@@ -1,0 +1,239 @@
+@font-face {
+    font-family: Tasa;
+    src: url(fonts/Tasa.ttf);
+}
+
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 80, 80);
+    filter: drop-shadow(5px);
+}
+header{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 53, 53);
+    top: 0;
+    margin: 0;
+}
+.menu{
+    display: none;
+    position: fixed;
+    background-color: white;
+    width: 50%;
+    height: 70%;
+    overflow-y: auto;
+    right: 0;
+    top: 0;
+    z-index: 4;
+}
+.logo{
+    width: 50px;
+    height: auto;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    text-align: center;
+}
+.left a{
+    font-family: Tasa, Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.left a:hover{
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+.lregbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+.lregbar a{
+    margin-right: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Tasa, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.lregbar a:hover{
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+.profile-con:hover{
+    cursor: pointer;
+}
+.profile{
+    width: 50px
+}
+.dmenu{
+    display: none;
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-panel{
+    margin: 150px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.sentences{
+    width: 40%;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.sen, .sen1, .sen2{
+    color: white; 
+    font-family: Tasa, Verdana, Geneva, Tahoma, sans-serif;
+}
+.sen1{
+    margin-top: 4%;
+}
+.swipescreen{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 0 0 100px;
+}
+.backB, .fordwB{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+.backB{
+    left: 5px;
+}
+.fordwB{
+    right: 5px;
+}
+.images{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+.images img{
+    width: 350px;
+    height: auto;
+}
+
+.second-panel{
+    margin:  100px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    width: 90%;
+}
+.grd{
+    background: rgba(255, 255, 255, 0.562);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.grd img{
+    width: 100%;
+    border-radius: 10px;
+}
+.grd h4, p{
+    margin: 0;
+}
+@media(min-width: 360px) and (max-width: 390px) {
+    
+    .left, .lregbar{
+        display: none;
+    }
+    .dmenu{
+        display: block;
+        position: absolute;
+        right: 10px;
+        color: bisque;
+        font-size: 28px;
+    }
+    .navbar{
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        height: 75px;
+    }
+    .main-panel{
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 75px 0 0 0;
+    }
+    .sentences{
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+    .swipescreen{
+        width: 90%;
+        margin: 50px 0 0 0;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        padding: 5px 15px 0 0;
+        background-color: rgb(22, 22, 22);
+        border: 1px solid black;
+    }
+    .menu-navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap:  20px;
+        left: 5px;
+    }
+    .menu-navigation a:first-of-type{
+        margin-top: 30px;
+    }
+    .menu-navigation a{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        font-family: Tasa, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    
+}

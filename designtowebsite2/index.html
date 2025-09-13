@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">\
+        <title>pusing</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="left">
+                    <a>Home</a>
+                    <a>Info</a>
+                    <a>Help</a>
+                </div>
+                <img alt="logo" src="images/waterbottom2.2.png" class="logo">
+                <div class="lregbar">
+                    <a>Sign in</a>
+                    <a>Sign up</a>
+                    <div class="profile-con">
+                        
+                    </div>
+                </div>
+                <div class="dmenu" onclick="menul()">
+                    <img src="images/menu.png" alt="menu">
+
+                </div>    
+            </div>
+            <div class="menu" id="menu">
+                <div class="menu-navigation">
+                    <img alt="profile picture" src="images/defaultP.png" class="profile">
+                    <a>Home</a>
+                    <a>Info</a>
+                    <a>Help</a>
+                    <a>Sign in</a>
+                    <a>Sign up</a>
+                    <a onclick="back()">Back</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="main-panel">
+                <div class="sentences">
+                    <div class="sen"><h2>Bosan menganggur?</h2></div>
+                    <div class="sen1"><h3>Yuk freelance di Anzio</h3></div>
+                    <div class="sen2"><p>Dijamin dapat klien (noob = False) di percobaan pertama</p></div>
+                </div>
+                <div id="swipescreen" class="swipescreen">
+                    <div class="backB">
+                        <img src="images/arrowright.png" alt="arrow" onclick="arrow1()">
+                    </div>
+                    <div class="images">
+                        <img id="pic1" alt="picture" src="images/image1.png">
+                        <img id="pic2" alt="picture" src="images/image2.png">
+                        <img id="pic3" alt="picture" src="images/proof.png">
+                    </div>
+                    <div class="fordwB">
+                        <img src="images/arrowleft.png" alt="arrow" onclick="arrow2()">
+                    </div>
+                </div>
+            </div>
+            <div class="second-panel">
+                <div class="grd"><img src="images/image1.png" alt="#"><h4>Title</h4><p>Description</p><p class="prc"></p>Price</div>
+                <div class="grd"><img src="images/image2.png" alt="#"><h4>Title</h4><p>Description</p><p class="prc"></p>Price</div>
+                <div class="grd"><img src="images/proof.png" alt="#"><h4>Title</h4><p>Description</p><p class="prc"></p>Price</div>
+                <div class="grd"><img src="images/proof.png" alt="#"><h4>Title</h4><p>Description</p><p class="prc"></p>Price</div>
+            </div>
+        </section>
+    </body>
+    <script src="index.js"></script>
+</html>
