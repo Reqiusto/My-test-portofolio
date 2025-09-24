@@ -1,0 +1,85 @@
+body{
+    background-image: url(images/download\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section{
+    margin: 50px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    gap: 15px;
+    border-radius: 10px;
+    padding: 25px 0 0 0;
+}
+.image{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+.sec1a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 70%;
+}
+.sec1{
+    width: 90%;
+    margin: 20px 0 0 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.text1{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+li{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.conclusion{
+    margin: 20px;
+    width: 80%;
+}
+@media (max-width: 412px) {
+    .sec1, .sec1a{
+        flex-direction: column;
+    }
+    .sec1a{
+        width: 90%;
+    }
+    .image{
+        width: 90%;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .text1{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+    }
+}
